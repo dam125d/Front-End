@@ -1,0 +1,86 @@
+<!-- app.component.html -->
+<div class="d-flex flex-column min-vh-100">
+  <!-- Header (NavBar) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="../assets/icon.png" style="height: 50px" />
+      <!-- <a class="navbar-brand" href="#">MyApp</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="User">Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservas">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Vuelos">Vuelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Registrate">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login">Ingresa</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container my-4 flex-grow-1">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light mt-auto py-3">
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Servicios</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h5>Información</h5>
+          <ul class="list-unstyled">
+            <li>Reservas</li>
+            <li>Ofertas</li>
+            <li>Destinos</li>
+            <li>Check-in</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li>Restricciones</li>
+            <li>Documentos requeridos</li>
+            <li>Aerocivil</li>
+            <li>Aeropuertos</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Legal</h5>
+          <ul class="list-unstyled">
+            <li>Trabaja con nosotros</li>
+            <li>Ayuda</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,36 @@
+<div class="container mt-5 text-left" style="height: 100px;background-color: #F5F5F5;">
+    <h1>Gestionar Usuarios</h1>
+</div>
+<div class="card-body">
+    <div class="mb-5 mt-3" style="text-align: right;">
+        <button class="btn btn-outline-success">
+            <i class="bi bi-plus"></i> Crear Usuario
+        </button>
+    </div>
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <td>{{ usuario.nombre }}</td>
+                <td>{{ usuario.correo }}</td>
+                <td>{{ usuario.rol }}</td>
+                <td>
+                    <button class="btn btn-outline-primary">
+                        <i class="bi bi-pen-fill"></i>
+                    </button>
+                    <button class="btn btn-outline-danger">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

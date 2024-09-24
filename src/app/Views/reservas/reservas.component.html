@@ -1,0 +1,57 @@
+<div class="container mt-5 text-center">
+  <h1>Reserva tu vuelo</h1>
+</div>
+<div class="card-body">
+  <form>
+    <div class="mb-3">
+      <label for="origen" class="form-label">Origen</label>
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          id="origen"
+          placeholder="Value"
+        />
+        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="destino" class="form-label">Destino</label>
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          id="destino"
+          placeholder="Value"
+        />
+        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="fechaSalida" class="form-label">Fecha de salida</label>
+      <div class="input-group">
+        <input type="date" class="form-control" id="fechaSalida" />
+        <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="cantidadPersonas" class="form-label">Cantidad Personas</label>
+      <div class="input-group">
+        <input
+          type="number"
+          class="form-control"
+          id="cantidadPersonas"
+          placeholder="Value"
+        />
+        <span class="input-group-text"><i class="bi bi-people"></i></span>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      <i class="bi bi-search"></i> Buscar Vuelos
+    </button>
+  </form>
+</div>
